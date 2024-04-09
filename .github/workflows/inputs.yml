@@ -24,7 +24,7 @@ jobs:
       - name: MKDIR
         run: |
          pathvar = "${{ vars.API_URL }}"
-         echo "mkdir teste --mode=${pathvar}"
+         echo "mkdir teste ${pathvar}"
 
       - name: MKDIR
         run: ls
