@@ -18,3 +18,4 @@ jobs:
         run: | 
           echo "environment is ${{ inputs.environment }} "
           echo "Environment variable TEST_VAR: ${{ vars.API_URL }}"
+          echo "TESTE variable TESTE: ${{ vars.TESTE }}"
