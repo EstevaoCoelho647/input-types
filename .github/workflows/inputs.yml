@@ -22,7 +22,7 @@ jobs:
 
 
       - name: MKDIR
-        run: mkdir teste --mode=${{ vars.ENV_FILE_PATH }}
+        run: mkdir teste --mode="${{ vars.ENV_FILE_PATH }}"
 
       - name: MKDIR
         run: ls
