@@ -24,7 +24,7 @@ jobs:
       - name: MKDIR
         run: |
          pathvar = "${{ vars.TESTE }}"
-         echo "git checkout -b ${{pathvar}}"
+         echo "git checkout -b ${pathvar}"
 
       - name: MKDIR
         run: ls
