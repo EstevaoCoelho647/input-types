@@ -22,7 +22,7 @@ jobs:
 
 
       - name: MKDIR
-        run: mkdir --dart-define-from-file=${{ vars.ENV_FILE_PATH }}
+        run: mkdir --mode=${{ vars.ENV_FILE_PATH }}
 
       - name: MKDIR
         run: ls
