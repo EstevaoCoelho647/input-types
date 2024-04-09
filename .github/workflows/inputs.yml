@@ -6,7 +6,7 @@ on:
       environment:
         type: environment
         description: Select the environment
-
+        
 jobs:
   build:
     runs-on: ubuntu-latest
