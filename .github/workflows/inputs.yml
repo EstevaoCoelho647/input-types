@@ -10,14 +10,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    environment: ${{ inputs.environment }}
     
     steps:
       - uses: actions/checkout@v2
       - name: greet
         run: | 
-          echo "environment is ${{ github.event.inputs.environment }} / ${{ inputs.environment }}"
-          echo "API URL ${{ env.vars.API_URL }}"
-          echo "API URL ${{ github.event.vars.API_URL }}"
-          echo "API URL ${{ env.API_URL }}"
+          echo "environment is ${{ inputs.environment }} 
           echo "Environment variable TEST_VAR: ${{ vars.API_URL }}"
