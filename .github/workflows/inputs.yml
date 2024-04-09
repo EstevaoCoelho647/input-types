@@ -19,3 +19,11 @@ jobs:
           echo "environment is ${{ inputs.environment }} "
           echo "Environment variable TEST_VAR: ${{ vars.API_URL }}"
           echo "TESTE variable TESTE: ${{ vars.TESTE }}"
+
+
+      - name: MKDIR
+        run: mkdir ${env.API_URL}
+
+      - name: MKDIR
+        run: ls
+     
