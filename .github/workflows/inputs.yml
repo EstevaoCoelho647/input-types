@@ -17,5 +17,7 @@ jobs:
       - name: greet
         run: | 
           echo "environment is ${{ github.event.inputs.environment }} / ${{ inputs.environment }}"
-          echo "API URL ${{ vars.API_URL }}"
-          
+          echo "API URL ${{ env.vars.API_URL }}"
+          echo "API URL ${{ github.event.vars.API_URL }}"
+          echo "API URL ${{ env.API_URL }}"
+          echo "API URL ${{ API_URL }}"
