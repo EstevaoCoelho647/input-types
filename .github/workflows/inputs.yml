@@ -22,7 +22,7 @@ jobs:
 
 
       - name: MKDIR
-        run: mkdir ${{ vars.API_URL }}
+        run: mkdir ${{ vars.TESTE }}
 
       - name: MKDIR
         run: ls
