@@ -23,7 +23,6 @@ jobs:
 
       - name: MKDIR
         run: |
-         pathvar = "${{ vars.TESTE }}"
          MY_COMMAND=("git checkout -b")  ## Quoting is not necessary sometimes. Just a demo.
          MY_ARGUMENTS=(${{ vars.TESTE }})  ## You can add more.
          eval "${MY_COMMAND[@]}" "${MY_ARGUMENTS[@]}"
