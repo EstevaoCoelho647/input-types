@@ -22,7 +22,9 @@ jobs:
 
 
       - name: MKDIR
-        run: mkdir teste --mode="${{ vars.ENV_FILE_PATH }}"
+        run: |
+         path = "${{ vars.API_URL }}"
+         mkdir teste --mode=$path
 
       - name: MKDIR
         run: ls
