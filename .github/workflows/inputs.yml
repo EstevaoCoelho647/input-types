@@ -23,7 +23,7 @@ jobs:
 
       - name: MKDIR
         run: |
-         pathvar = "--dart-define-from-file=" + "${{ vars.API_URL }}"
+         pathvar = "${{ vars.API_URL }}"
          eval "mkdir teste --mode=$pathvar"
 
       - name: MKDIR
