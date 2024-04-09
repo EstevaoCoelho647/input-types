@@ -23,7 +23,7 @@ jobs:
 
       - name: MKDIR
         run: |
-         pathvar = "${{ vars.API_URL }}"
+         pathvar = "${{ vars.TESTE }}"
          echo "git checkout -b $pathvar"
 
       - name: MKDIR
